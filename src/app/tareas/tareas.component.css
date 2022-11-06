@@ -1,0 +1,22 @@
+input {
+    width: 300px !important;
+    color: white !important;
+}
+
+.input-container {
+    width: 500px;
+    font-size: large;
+}
+
+.botonFormulario {
+    background-color: rgba(29, 73, 100, 0.877);
+    width: 250px;
+}
+
+.card {
+    width: 800px;
+}
+
+li {
+    list-style-type: none;
+}

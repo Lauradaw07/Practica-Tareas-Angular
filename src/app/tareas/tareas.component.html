@@ -1,0 +1,71 @@
+<div class="row">
+
+    <div class="col-12 col-lg-12 mt-3 mb-3 d-flex justify-content-center">
+
+        <form (submit)="crearTarea( $event )">
+
+            <mat-form-field class="input-container">
+                <mat-label>Título de la tarea</mat-label>
+                <input id="inputTitulo" matInput placeholder="Ej: Ir al supermercado">
+            </mat-form-field>
+        
+            <br>
+        
+            <mat-form-field class="input-container">
+                <mat-label>Descripción de la tarea</mat-label>
+                <input id="inputDescripcion" matInput placeholder="Ej: Comprar pan, azúcar y leche">
+            </mat-form-field>
+            
+            <br>
+        
+            <button mat-raised-button class="botonFormulario">Crear tarea</button>
+        
+        </form>
+
+    </div>
+
+</div>
+
+<div class="row mt-4">
+
+    <div class="col-12 col-lg-12 d-flex justify-content-center">
+
+        <ul>
+
+            <li *ngFor="let tarea of tareas">
+
+                <div class="row">
+
+                    <div class="card mb-4">
+
+                        <div class="card-body d-flex justify-content-evenly align-items-center">
+
+                            <div class="col-12 col-lg-10">
+    
+                                <p><b>Título:</b> {{tarea.titulo}}</p>
+
+                                <hr>
+
+                                <p><b>Descripción:</b> {{tarea.descripcion}}</p>
+
+                            </div>
+
+                            <div class="col-12 col-lg-2 d-flex justify-content-center">
+
+                                <button mat-raised-button class="botonBorrar">X</button>
+
+                            </div>
+                            
+                        </div>
+    
+                    </div>  
+                    
+                </div>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>

@@ -1,0 +1,10 @@
+span {
+    font-size: xx-large;
+    color: rgb(244, 244, 244);
+    /* font-weight: bold; */
+}
+
+img {
+    width: 50px;
+    margin-left: 20px;
+}
