@@ -32,5 +32,19 @@ export class TareasComponent {
         }
     }
 
+    tacharTarea() {
+
+    }
+
+    borrarTarea(evento:any) {
+        console.log(evento);
+        
+        let tareaABorrar = evento.target;
+        console.log(tareaABorrar);
+        
+        tareaABorrar.parentElement.parentElement.parentElement.parentElement.remove();
+    }
+
+
 }
 
