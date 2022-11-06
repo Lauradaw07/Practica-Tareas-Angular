@@ -27,24 +27,28 @@ export class TareasComponent {
                 descripcion: this.descripcionTarea
                 }
 
-                this.tareas.push(tarea);
+                this.tareas.push(tarea);                
             }
         }
     }
 
-    tacharTarea() {
-
+    tacharTarea(evento:any) {
+        let tarjetaATachar = evento.target;
+        let id = evento.target.getAttribute("id");
+        console.log(id);
+        
+        console.log(tarjetaATachar);
+        let descripcion = document.querySelector(".parrafoDescripcion");
+        
+        descripcion?.classList?.toggle("tachar");
     }
 
     borrarTarea(evento:any) {
-        console.log(evento);
-        
-        let tareaABorrar = evento.target;
+        let tareaABorrar = evento.target;  
         console.log(tareaABorrar);
-        
+              
         tareaABorrar.parentElement.parentElement.parentElement.parentElement.remove();
+        console.log(this.tareas);
+        
     }
-
-
 }
-

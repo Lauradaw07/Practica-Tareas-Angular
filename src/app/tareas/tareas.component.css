@@ -20,3 +20,18 @@ input {
 li {
     list-style-type: none;
 }
+
+.tachar {
+    text-decoration: line-through;
+}
+
+.tituloTarea {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+}
+
+
+.parrafoDescripcion {
+    font-family: 'Alice', serif;
+}

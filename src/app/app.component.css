@@ -1,0 +1,19 @@
+.container-fluid {
+    height: 100vh !important;
+    margin: 0% !important;
+    padding: 0.8%;
+}
+
+main {
+    height: 1fr;
+}
+
+header {
+    height: 150px;
+}
+
+.footer {
+    background-color: rgba(233, 232, 226, 0.703);
+    height: 130px;
+    margin-top: 205px;
+}

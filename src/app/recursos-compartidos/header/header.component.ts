@@ -9,5 +9,5 @@ import { Component } from "@angular/core";
 export class HeaderComponent {
     titulo:string = "Lista de tareas";
 
-    rutaImagen:string = "tarea.png";
+    nombreImagen:string = "tarea.png";
 }
